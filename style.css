@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 tr{
     width: 399px;
 }
@@ -11,7 +18,7 @@ td{
 }
 
 td:hover {
-    background-color: rgba(25, 221, 0, 0.1);
+    background-color: rgba(25, 221, 0, 0.2);
 }
 
 tr:first-child td{
@@ -34,8 +41,8 @@ table{
     border-collapse: collapse;
 }
 
-img {
-    position: absolute;
+.table-body{
+    position: relative;
 }
 
 .shape{
@@ -48,4 +55,22 @@ img {
 
 .d-none{
     display: none;
+}
+
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 16px;
+}
+
+.player-panel{
+    display: flex;
+    font-size: 32px;
+    margin-bottom: 12px;
+    justify-content: space-between;
+}
+
+.player-inactive{
+    opacity: 0.5;
 }
